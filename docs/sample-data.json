@@ -1,0 +1,84 @@
+{
+  "membershipPlans": [
+    {
+      "id": 1,
+      "name": "Basic Gym",
+      "durationDays": 30,
+      "price": 250,
+      "description": "Standard access",
+      "isActive": true
+    },
+    {
+      "id": 2,
+      "name": "Premium Gym",
+      "durationDays": 60,
+      "price": 450,
+      "description": "Full gym access with extras",
+      "isActive": true
+    },
+    {
+      "id": 3,
+      "name": "Personal Training",
+      "durationDays": 30,
+      "price": 700,
+      "description": "Includes personal training sessions",
+      "isActive": true
+    }
+  ],
+  "trainers": [
+    { "id": 1, "name": "Ali Hassan", "phone": "0501112233", "specialization": "Strength", "isActive": true },
+    { "id": 2, "name": "Sara Ahmed", "phone": "0502223344", "specialization": "Cardio", "isActive": true },
+    { "id": 3, "name": "Nora Sami", "phone": "0503334455", "specialization": "CrossFit", "isActive": true }
+  ],
+  "members": [
+    {
+      "id": 1,
+      "fullName": "Omar Khalid",
+      "phone": "0501000001",
+      "email": "omar@example.com",
+      "gender": "Male",
+      "dateOfBirth": "1992-05-10",
+      "joinDate": "2025-08-01",
+      "membershipPlanId": 1,
+      "status": "Active",
+      "trainerId": 1,
+      "notes": "Regular member"
+    },
+    {
+      "id": 2,
+      "fullName": "Layla Salem",
+      "phone": "0501000002",
+      "email": "layla@example.com",
+      "gender": "Female",
+      "dateOfBirth": "1995-02-12",
+      "joinDate": "2025-07-20",
+      "membershipPlanId": 2,
+      "status": "Active",
+      "trainerId": 2,
+      "notes": "Prefers cardio training"
+    },
+    {
+      "id": 3,
+      "fullName": "Yousef Nasser",
+      "phone": "0501000003",
+      "email": "yousef@example.com",
+      "gender": "Male",
+      "dateOfBirth": "1988-11-08",
+      "joinDate": "2025-03-01",
+      "membershipPlanId": 3,
+      "status": "Expired",
+      "trainerId": 3,
+      "notes": "Needs renewal"
+    }
+  ],
+  "payments": [
+    { "id": 1, "memberId": 1, "amount": 250, "paymentDate": "2025-08-01", "paymentMethod": "Card", "invoiceNumber": "INV-1001", "status": "Paid", "notes": "Monthly payment" },
+    { "id": 2, "memberId": 2, "amount": 450, "paymentDate": "2025-07-20", "paymentMethod": "Cash", "invoiceNumber": "INV-1002", "status": "Paid", "notes": "Premium access" },
+    { "id": 3, "memberId": 3, "amount": 700, "paymentDate": "2025-03-01", "paymentMethod": "Transfer", "invoiceNumber": "INV-1003", "status": "Pending", "notes": "Renewal pending" }
+  ],
+  "attendance": [
+    { "id": 1, "memberId": 1, "checkInDate": "2025-09-10", "checkInTime": "08:30:00", "checkOutTime": "09:45:00", "status": "Present" },
+    { "id": 2, "memberId": 2, "checkInDate": "2025-09-10", "checkInTime": "18:00:00", "checkOutTime": "19:00:00", "status": "Present" },
+    { "id": 3, "memberId": 3, "checkInDate": "2025-09-09", "checkInTime": "07:00:00", "checkOutTime": "08:00:00", "status": "Late" }
+  ]
+}

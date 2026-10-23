@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <NoWarn>$(NoWarn);CS9057</NoWarn>
+    <RootNamespace>StarGymApp.Desktop</RootNamespace>
+    <AssemblyName>StarGymApp.Desktop</AssemblyName>
+    <ApplicationIcon>Assets\StarGym.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\StarGymApp.Core\StarGymApp.Core.csproj" />
+    <None Include="..\StarGymApp.Core\Data\expanded-starter-data.json" Link="Data\expanded-starter-data.json" CopyToOutputDirectory="PreserveNewest" />
+    <Resource Include="Assets\gym-hero.png" />
+    <Resource Include="Assets\gym-sidebar-card.png" />
+    <PackageReference Include="OpenCvSharp4" Version="4.13.0.20260627">
+      <ExcludeAssets>analyzers</ExcludeAssets>
+    </PackageReference>
+    <PackageReference Include="OpenCvSharp4.runtime.win" Version="4.13.0.20260627">
+      <ExcludeAssets>analyzers</ExcludeAssets>
+    </PackageReference>
+  </ItemGroup>
+</Project>

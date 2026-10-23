@@ -1,0 +1,45 @@
+{
+  "membershipPlans": [
+    { "id": 1, "name": "Basic Gym", "durationDays": 30, "price": 250, "description": "Standard gym access", "isActive": true },
+    { "id": 2, "name": "Premium Gym", "durationDays": 60, "price": 450, "description": "Full gym access with locker access", "isActive": true },
+    { "id": 3, "name": "Personal Training", "durationDays": 30, "price": 700, "description": "Includes personal training sessions", "isActive": true },
+    { "id": 4, "name": "Family Plan", "durationDays": 90, "price": 800, "description": "Family membership package", "isActive": true }
+  ],
+  "trainers": [
+    { "id": 1, "name": "Ali Hassan", "phone": "0501112233", "specialization": "Strength", "isActive": true },
+    { "id": 2, "name": "Sara Ahmed", "phone": "0502223344", "specialization": "Cardio", "isActive": true },
+    { "id": 3, "name": "Nora Sami", "phone": "0503334455", "specialization": "CrossFit", "isActive": true }
+  ],
+  "members": [
+    { "id": 1, "fullName": "Omar Khalid", "phone": "0501000001", "email": "omar@example.com", "gender": "Male", "dateOfBirth": "1992-05-10", "joinDate": "2025-08-01", "membershipPlanId": 1, "status": "Active", "trainerId": 1, "notes": "Regular member" },
+    { "id": 2, "fullName": "Layla Salem", "phone": "0501000002", "email": "layla@example.com", "gender": "Female", "dateOfBirth": "1995-02-12", "joinDate": "2025-07-20", "membershipPlanId": 2, "status": "Active", "trainerId": 2, "notes": "Prefers cardio training" },
+    { "id": 3, "fullName": "Yousef Nasser", "phone": "0501000003", "email": "yousef@example.com", "gender": "Male", "dateOfBirth": "1988-11-08", "joinDate": "2025-03-01", "membershipPlanId": 3, "status": "Expired", "trainerId": 3, "notes": "Needs renewal" },
+    { "id": 4, "fullName": "Dana Saleh", "phone": "0501000004", "email": "dana@example.com", "gender": "Female", "dateOfBirth": "1997-09-21", "joinDate": "2025-08-15", "membershipPlanId": 4, "status": "Active", "trainerId": 2, "notes": "New family plan member" },
+    { "id": 5, "fullName": "Hamad Ali", "phone": "0501000005", "email": "hamad@example.com", "gender": "Male", "dateOfBirth": "1990-01-17", "joinDate": "2025-06-05", "membershipPlanId": 2, "status": "Paused", "trainerId": 1, "notes": "On temporary pause" },
+    { "id": 6, "fullName": "Sara Omar", "phone": "0501000006", "email": "sara@example.com", "gender": "Female", "dateOfBirth": "2000-04-08", "joinDate": "2025-09-01", "membershipPlanId": 1, "status": "Active", "trainerId": 3, "notes": "Beginner program" },
+    { "id": 7, "fullName": "Khaled Faris", "phone": "0501000007", "email": "khaled@example.com", "gender": "Male", "dateOfBirth": "1986-12-15", "joinDate": "2025-05-10", "membershipPlanId": 1, "status": "Inactive", "trainerId": 1, "notes": "Did not renew" },
+    { "id": 8, "fullName": "Reem Rami", "phone": "0501000008", "email": "reem@example.com", "gender": "Female", "dateOfBirth": "1994-07-03", "joinDate": "2025-08-28", "membershipPlanId": 3, "status": "Active", "trainerId": 2, "notes": "High consistency" },
+    { "id": 9, "fullName": "Zaid Majed", "phone": "0501000009", "email": "zaid@example.com", "gender": "Male", "dateOfBirth": "1993-06-29", "joinDate": "2025-08-22", "membershipPlanId": 2, "status": "Active", "trainerId": 1, "notes": "Uses gym after work" },
+    { "id": 10, "fullName": "Noor Mansoor", "phone": "0501000010", "email": "noor@example.com", "gender": "Female", "dateOfBirth": "1998-10-11", "joinDate": "2025-04-20", "membershipPlanId": 2, "status": "Expired", "trainerId": 2, "notes": "Renewal reminder sent" }
+  ],
+  "payments": [
+    { "id": 1, "memberId": 1, "amount": 250, "paymentDate": "2025-08-01", "paymentMethod": "Card", "invoiceNumber": "INV-001", "status": "Paid", "notes": "Monthly payment" },
+    { "id": 2, "memberId": 2, "amount": 450, "paymentDate": "2025-07-20", "paymentMethod": "Cash", "invoiceNumber": "INV-002", "status": "Paid", "notes": "Premium payment" },
+    { "id": 3, "memberId": 3, "amount": 700, "paymentDate": "2025-03-01", "paymentMethod": "Transfer", "invoiceNumber": "INV-003", "status": "Pending", "notes": "Renewal pending" },
+    { "id": 4, "memberId": 4, "amount": 800, "paymentDate": "2025-08-15", "paymentMethod": "Card", "invoiceNumber": "INV-004", "status": "Paid", "notes": "Family plan" },
+    { "id": 5, "memberId": 5, "amount": 450, "paymentDate": "2025-06-05", "paymentMethod": "Cash", "invoiceNumber": "INV-005", "status": "Pending", "notes": "Membership on pause" },
+    { "id": 6, "memberId": 6, "amount": 250, "paymentDate": "2025-09-01", "paymentMethod": "Card", "invoiceNumber": "INV-006", "status": "Paid", "notes": "Basic plan" },
+    { "id": 7, "memberId": 7, "amount": 250, "paymentDate": "2025-05-10", "paymentMethod": "Transfer", "invoiceNumber": "INV-007", "status": "Overdue", "notes": "Failed renewal" },
+    { "id": 8, "memberId": 8, "amount": 700, "paymentDate": "2025-08-28", "paymentMethod": "Cash", "invoiceNumber": "INV-008", "status": "Paid", "notes": "Personal training" }
+  ],
+  "attendance": [
+    { "id": 1, "memberId": 1, "checkInDate": "2025-09-10", "checkInTime": "08:30:00", "checkOutTime": "09:45:00", "status": "Present" },
+    { "id": 2, "memberId": 2, "checkInDate": "2025-09-10", "checkInTime": "18:00:00", "checkOutTime": "19:00:00", "status": "Present" },
+    { "id": 3, "memberId": 3, "checkInDate": "2025-09-09", "checkInTime": "07:00:00", "checkOutTime": "08:00:00", "status": "Late" },
+    { "id": 4, "memberId": 4, "checkInDate": "2025-09-11", "checkInTime": "17:15:00", "checkOutTime": "18:30:00", "status": "Present" },
+    { "id": 5, "memberId": 5, "checkInDate": "2025-09-11", "checkInTime": "09:00:00", "checkOutTime": "10:20:00", "status": "Present" },
+    { "id": 6, "memberId": 6, "checkInDate": "2025-09-10", "checkInTime": "06:45:00", "checkOutTime": "07:45:00", "status": "Present" },
+    { "id": 7, "memberId": 7, "checkInDate": "2025-09-08", "checkInTime": "08:00:00", "checkOutTime": "09:00:00", "status": "Absent" },
+    { "id": 8, "memberId": 8, "checkInDate": "2025-09-11", "checkInTime": "19:15:00", "checkOutTime": "20:00:00", "status": "Late" }
+  ]
+}
