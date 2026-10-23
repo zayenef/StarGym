@@ -62,7 +62,7 @@ StarGym is a Windows desktop application for gym owners and staff. It brings mem
 
 ### Run the packaged application
 
-1. Download the Windows x64 ZIP from the project's GitHub Release (when one is published).
+1. Download the latest Windows x64 ZIP from the [GitHub Releases page](https://github.com/zayenef/StarGym/releases).
 2. Extract the **entire ZIP** to a folder you can keep in place. Do not separate the executable from its `Data` folder.
 3. Run `StarGymApp.Desktop.exe`.
 4. Optional: run `Create Desktop Shortcut.bat` from the extracted folder to create a StarGym shortcut on the Windows Desktop.
@@ -79,7 +79,7 @@ Requirements:
 - Git (if cloning the repository)
 
 ```powershell
-git clone <repository-url>
+git clone https://github.com/zayenef/StarGym.git
 cd StarGym
 dotnet restore StarGymApp.sln
 dotnet build StarGymApp.sln --configuration Release
